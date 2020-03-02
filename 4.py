@@ -12,7 +12,7 @@ def avg(data):
 
 def std(data):
     mu = avg(data)
-    std = (sum([(i - mu)**2 for i in data]) / (len(data) - 1))**0.5
+    std = (sum([(i - mu)**2 for i in data]) / len(data))**0.5
     return std
 
 def koef_pirsona(x, y):
